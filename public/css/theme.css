@@ -1,0 +1,104 @@
+h1 {
+    color: #00e6b4;
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    border-bottom: solid 1px #00e6b4;
+    margin-bottom: 30px;
+}
+
+p {
+    color: #e6fae6;
+    text-align: center;
+    padding: 5px 5px 5px 5px;
+}
+
+a {
+    color: inherit;
+}
+
+a:hover {
+    color: white;
+}
+
+thead {
+    background-color: #00e6b4;
+}
+
+.contact > div {
+    font-size: 24px;
+}
+
+.fab {
+    font-size: 32px;
+}
+
+thead > tr {
+    color: #1b1e21;
+}
+
+div {
+    margin-bottom: 30px;
+}
+
+nav {
+    box-shadow: #00e6b4 0 0 4px 0;
+    background-color: #00e6b4;
+}
+
+nav > div > ul > li > a {
+    color: #1d2124;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav > div > ul > li > a:hover {
+    color: white;
+}
+
+@media only screen and(max-width: 768px) {
+    nav > div > ul > li a {
+        font-size: 14px;
+    }
+}
+
+nav > .navbar-brand {
+    color: #1d2124;
+    font-size: 18px;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.card {
+    border: solid 1px #00e6b4;
+}
+
+img {
+    border: solid 1px #e6fae6;
+    opacity: 0.8;
+}
+
+/*.card-body > p {*/
+/*width: 200px;*/
+/*white-space: nowrap;*/
+/*overflow: hidden;*/
+/*text-overflow: ellipsis;*/
+/*}*/
+.card:hover {
+    box-shadow: #1b1e21 0 0 30px 0;
+}
+
+.btn {
+    background-color: #00e6b4 !important;
+    color: #1d2124;
+    align-content: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.btn:hover {
+    background-color: #e6fae6 !important;
+}
+
+.material-icons {
+    font-size: 28px
+}
+
