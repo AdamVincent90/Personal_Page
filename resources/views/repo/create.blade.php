@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @extends('components.appBar')
 @extends('components.footer')
+@extends('auth.checkSession')
 
 
 @section('content')

@@ -11,8 +11,12 @@
         <!-- Copyright -->
         <div class="footer-copyright text-center">© 2020 Copyright:
             <a class="text-white-50" href="https://mdbootstrap.com/"> Adam Vincent</a>
+            @if(isset(\Illuminate\Support\Facades\Auth::user()->email))
+                <a class="float-right m-0 p-0" href="/login/logout">Logout</a>
+                @else
+                <a class="float-right m-0 p-0" href="/login">Login</a>
+                @endif
         </div>
-        <!-- Copyright -->
-            <p class="mt-0">Developed with Bootstrap and Laravel!</p>
+        <p class="mt-0 mr-5">Developed with Bootstrap and Laravel!</p>
     </footer>
     @endsection

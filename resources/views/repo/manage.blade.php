@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @extends('components.footer')
 @extends('components.appBar')
+@extends('auth.checkSession')
 
 @section('content')
     <div class="container pt-5 mb-0">

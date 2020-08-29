@@ -36,3 +36,9 @@ Route::resource('/grades', 'GradeController');
 //Contact Page Routes and Actions
 
 Route::resource('/contact', 'ContactController');
+
+//Login Route
+
+Route::get('/login', 'LoginController@index');
+Route::post('/login/validation', 'LoginController@validation');
+Route::get('/login/logout', 'LoginController@logOut');
