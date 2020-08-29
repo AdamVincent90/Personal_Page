@@ -13,32 +13,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Use to create "about" as a phantom root page
+Route::get('/', function () {
+    return redirect('/about');
+});
 
-//Home Page Route only
+//About Page Routes and Actions
 
-Route::get('/home', 'HomeController@route');
+Route::get('/about/manage', 'AboutController@manage');
+Route::resource('/about', 'AboutController');
 
+//Repository Page Routes and Actions
 
-//About page Route only
+Route::get('/repositories/manage', 'RepositoryController@manage');
+Route::resource('/repositories', 'RepositoryController');
 
-Route::get('/', 'AboutController@route');
+//Grades Page Routes and Actions
 
-//About page Route only
+Route::get('grades/manage', 'GradeController@manage');
+Route::resource('/grades', 'GradeController');
 
-Route::get('/grades', 'GradeController@route');
+//Contact Page Routes and Actions
 
-//About page contact only
-
-Route::get('/contact', 'ContactController@route');
-
-//Create GitHub Repositories VIA eloquent
-
-Route::get('create-git', 'HomeController@create');
-
-//Create Hobby VIA eloquent
-
-Route::get('create-hobby', 'AboutController@create');
-
-//Create Grade VIA eloquent
-
-Route::get('create-grade', 'GradeController@create');
+Route::resource('/contact', 'ContactController');

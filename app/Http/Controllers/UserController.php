@@ -1,11 +1,10 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Grade;
 
 use Illuminate\Http\Request;
 
-class GradeController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,13 +13,7 @@ class GradeController extends Controller
      */
     public function index()
     {
-        $grades = Grade::all();
-        return view('grade.index')->with('grades', $grades);
-    }
-
-    public function manage() {
-        $grades = Grade::all();
-        return view('grade.manage')->with('grades', $grades);
+        //
     }
 
     /**
@@ -30,7 +23,7 @@ class GradeController extends Controller
      */
     public function create()
     {
-        return view('grade.create');
+        //
     }
 
     /**
@@ -41,8 +34,7 @@ class GradeController extends Controller
      */
     public function store(Request $request)
     {
-        Grade::create($request->all());
-        return redirect('/grades');
+        //
     }
 
     /**
@@ -64,9 +56,7 @@ class GradeController extends Controller
      */
     public function edit($id)
     {
-        $grade = Grade::where('id', $id)->get();
-
-        return view('grade.edit', compact('grade'));
+        //
     }
 
     /**
@@ -78,10 +68,7 @@ class GradeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $grade = Grade::where('id', $id)->first();
-        $grade->update($request->all());
-
-        return redirect('grades/manage');
+        //
     }
 
     /**
@@ -92,7 +79,6 @@ class GradeController extends Controller
      */
     public function destroy($id)
     {
-        Grade::destroy($id);
-        return redirect('grades/manage');
+        //
     }
 }

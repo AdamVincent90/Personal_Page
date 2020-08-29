@@ -1,11 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Grade;
 
 use Illuminate\Http\Request;
+use App\Repository;
 
-class GradeController extends Controller
+class RepositoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,13 +14,13 @@ class GradeController extends Controller
      */
     public function index()
     {
-        $grades = Grade::all();
-        return view('grade.index')->with('grades', $grades);
+        $repos = Repository::all();
+        return view('repo.index')->with('repos', $repos);
     }
 
     public function manage() {
-        $grades = Grade::all();
-        return view('grade.manage')->with('grades', $grades);
+        $repos = Repository::all();
+        return view('repo.manage')->with('repos', $repos);
     }
 
     /**
@@ -30,7 +30,7 @@ class GradeController extends Controller
      */
     public function create()
     {
-        return view('grade.create');
+        return view('repo.create');
     }
 
     /**
@@ -41,8 +41,8 @@ class GradeController extends Controller
      */
     public function store(Request $request)
     {
-        Grade::create($request->all());
-        return redirect('/grades');
+        Repository::create($request->all());
+        return redirect('/repositories');
     }
 
     /**
@@ -53,7 +53,8 @@ class GradeController extends Controller
      */
     public function show($id)
     {
-        //
+        $repos = Repository::where('repository_id', $id)->get();
+        return view('repo.index', compact('repos'));
     }
 
     /**
@@ -64,9 +65,9 @@ class GradeController extends Controller
      */
     public function edit($id)
     {
-        $grade = Grade::where('id', $id)->get();
+        $repo = Repository::where('repository_id', $id)->get();
 
-        return view('grade.edit', compact('grade'));
+        return view('repo.edit', compact('repo'));
     }
 
     /**
@@ -78,10 +79,10 @@ class GradeController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $grade = Grade::where('id', $id)->first();
-        $grade->update($request->all());
+        $repo = Repository::where('repository_id', $id)->first();
+        $repo->update($request->all());
 
-        return redirect('grades/manage');
+        return redirect('repositories/manage');
     }
 
     /**
@@ -92,7 +93,7 @@ class GradeController extends Controller
      */
     public function destroy($id)
     {
-        Grade::destroy($id);
-        return redirect('grades/manage');
+        Repository::destroy($id);
+        return redirect('repositories/manage');
     }
 }

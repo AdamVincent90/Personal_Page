@@ -9,8 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
           integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{secure_asset('css/app.css')}}">
-    <link rel="stylesheet" href="{{secure_asset('css/theme.css')}}">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
+    <link rel="stylesheet" href="{{asset('css/theme.css')}}">
     <script src="{{asset('js/app.js')}}"></script>
     <title>Personal Web Page</title>
 </head>

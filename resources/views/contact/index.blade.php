@@ -1,6 +1,6 @@
 @extends('layouts.app')
-@extends('footer')
-@extends('appBar')
+@extends('components.footer')
+@extends('components.appBar')
 
 @section('content')
     <div class="container pt-5 contact">

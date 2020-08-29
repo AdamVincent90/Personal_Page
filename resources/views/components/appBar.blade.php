@@ -9,16 +9,16 @@
         <div class="collapse navbar-collapse mb-0" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/"><i class="fas fa-coffee">About Me!</i></a>
+                    <a class="nav-link" href="/about"><i class="fas fa-coffee">About Me!</i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="home"><i class="fas fa-home">GitHub Repositories</i></a>
+                    <a class="nav-link" href="/repositories"><i class="fas fa-home">GitHub Repositories</i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="grades"><i class="fas fa-book">University Grades</i></a>
+                    <a class="nav-link" href="/grades"><i class="fas fa-book">University Grades</i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="contact"><i class="fas fa-phone">Contact and Resume</i></a>
+                    <a class="nav-link" href="/contact"><i class="fas fa-phone">Contact and Resume</i></a>
                 </li>
             </ul>
             <div class="mr-2 my-2 my-lg-0">
