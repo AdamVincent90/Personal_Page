@@ -13,7 +13,7 @@
                 {{csrf_field()}}
                 <div class="form-group">
                     <label class="col-form-label">Email</label>
-                    <input class="form-control" type="email" name="email" placeholder="email">
+                    <input class="form-control" type="email" name="dni" placeholder="email">
                 </div>
                 <div class="form-group">
                     <label class="col-form-label">Password</label>
