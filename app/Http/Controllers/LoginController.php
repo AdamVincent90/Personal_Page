@@ -17,7 +17,7 @@ class LoginController extends Controller
     public function validation(Request $request) {
 
             $this->validate($request, [
-                'dni' => 'required|dni',
+                'dni' => 'required|email',
                 'password' => 'required|alphaNum|min:6'
             ]);
             $user = [
