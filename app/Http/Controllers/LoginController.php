@@ -21,7 +21,7 @@ class LoginController extends Controller
                 'password' => 'required|alphaNum|min:6'
             ]);
             $user = [
-                'dni' => $request->get('dni'),
+                'email' => $request->get('dni'),
                 'password' => $request->get('password')
             ];
             if(Auth::attempt($user)) {
