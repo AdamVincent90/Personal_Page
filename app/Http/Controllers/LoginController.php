@@ -25,7 +25,9 @@ class LoginController extends Controller
                 'password' => $request->get('password')
             ];
             if(Auth::attempt($user)) {
-                return redirect('/about');
+
+                 //   return redirect('/about');
+
             }
             else {
                 return back()->with('error', 'Incorrect Email or Password.');
