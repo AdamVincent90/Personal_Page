@@ -9,7 +9,7 @@
         <div class="row text-center pt-2 mb-0">
             <div class="col col-12">
                 <i class="fas fa-envelope"> Email Address</i>
-                <li class="nav-link"><a href="mailto: Adam.J.Vincent@gmail.com">Adam.J.Vincent</a></li>
+                <li class="nav-link"><a href="mailto: Adam.J.Vincent@gmail.com">Adam.J.Vincent@gmail.com</a></li>
             </div>
 
             <div class="col col-12">
