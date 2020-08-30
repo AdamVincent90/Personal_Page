@@ -10,7 +10,7 @@
 
         <!-- Copyright -->
         <div class="footer-copyright text-center">© 2020 Copyright:
-            <a class="text-white-50" href="https://mdbootstrap.com/"> Adam Vincent</a>
+            <p> Adam Vincent</p>
             @if(isset(\Illuminate\Support\Facades\Auth::user()->email))
                 <a class="float-right m-0 p-0" href="/login/logout">Logout</a>
                 @else

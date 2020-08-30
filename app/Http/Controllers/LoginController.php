@@ -26,8 +26,8 @@ class LoginController extends Controller
             ];
             if(Auth::attempt($user)) {
 
-
-                    return redirect('/');
+                    $_SESSION['email'] = $user->email;
+                    return redirect('/about');
 
             }
             else {
