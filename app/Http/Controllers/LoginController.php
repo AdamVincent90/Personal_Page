@@ -25,12 +25,12 @@ class LoginController extends Controller
                 'password' => $request->get('password')
             ];
 
-           return dd($user);
-//            if(Auth::attempt($user)) {
-//
-//                    return redirect('/about');
-//
-//            }
+
+            if(Auth::attempt($user)) {
+
+                    return redirect('/about');
+
+            }
 //            else {
 //                return back()->with('error', 'Incorrect Email or Password.');
 //            }
