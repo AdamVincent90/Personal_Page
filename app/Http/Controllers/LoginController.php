@@ -18,16 +18,17 @@ class LoginController extends Controller
 
             $this->validate($request, [
                 'email' => 'required|email',
-                'password' => 'required|min:6'
+                'password' => 'required|alphaNum|min:6'
             ]);
             $user = [
                 'email' => $request->get('email'),
                 'password' => $request->get('password')
             ];
-
             if(Auth::attempt($user)) {
 
+
                     return redirect('/');
+
             }
             else {
                 return back()->with('error', 'Incorrect Email or Password.');
