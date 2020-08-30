@@ -28,7 +28,8 @@ class LoginController extends Controller
 
             if(Auth::attempt($user)) {
 
-                    return redirect('/about');
+//                    return redirect('/about');
+                return $user;
 
             }
 //            else {
