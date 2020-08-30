@@ -26,7 +26,8 @@ class LoginController extends Controller
             ];
             if(Auth::attempt($user)) {
 
-                    return redirect('/');
+
+                    return var_dump(Auth::user()->email);
 
             }
             else {
