@@ -15,7 +15,7 @@
                     <a class="nav-link" href="/repositories"><i class="fas fa-home">GitHub Repositories</i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/grades"><i class="fas fa-book">University Grades</i></a>
+                    <a class="nav-link" href="/grades"><i class="fas fa-book">University Modules</i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/contact"><i class="fas fa-phone">Contact and Resume</i></a>
