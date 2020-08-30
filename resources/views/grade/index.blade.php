@@ -5,7 +5,7 @@
 @section('content')
     <div class="container pt-5 mb-0">
         <h1>University Modules and grades</h1>
-        <p>Below are a list of my University modules that demonstrate some of the skills I developed during University</p>
+        <p>Below are a list of my University modules that demonstrate some of the skills I developed during University.</p>
         <table class="table table-hover table-dark mt-5 text-center mb-0">
             <thead>
             <tr>
