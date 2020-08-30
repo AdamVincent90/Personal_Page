@@ -17,16 +17,16 @@ class LoginController extends Controller
     public function validation(Request $request) {
 
             $this->validate($request, [
-                'dni' => 'required|email',
+                'email' => 'required|email',
                 'password' => 'required|alphaNum|min:6'
             ]);
             $user = [
-                'email' => $request->get('dni'),
+                'email' => $request->get('email'),
                 'password' => $request->get('password')
             ];
             if(Auth::attempt($user)) {
 
-                 //   return redirect('/about');
+                    return redirect('/');
 
             }
             else {
