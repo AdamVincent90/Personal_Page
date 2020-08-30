@@ -24,10 +24,11 @@ class LoginController extends Controller
                 'email' => $request->get('email'),
                 'password' => $request->get('password')
             ];
+            sleep(3);
             if(Auth::attempt($user)) {
 
 
-                    return var_dump(Auth::user()->email);
+                    return redirect('/');
 
             }
             else {
