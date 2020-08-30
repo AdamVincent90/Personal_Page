@@ -32,9 +32,9 @@ class LoginController extends Controller
 
 
             }
-//            else {
-//                return back()->with('error', 'Incorrect Email or Password.');
-//            }
+            else {
+                return back()->with('error', 'Incorrect Email or Password.');
+            }
     }
 
     public function logOut() {
