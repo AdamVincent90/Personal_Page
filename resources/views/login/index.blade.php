@@ -5,7 +5,7 @@
 @section('content')
     <div class="container">
         <h1 class="pt-5">Login</h1>
-        <div class="text-center container w-50 shadow pt-5">
+        <div class="text-center container w-75 shadow pt-5">
             @if($message = \Illuminate\Support\Facades\Session::get('error'))
                     <strong>{{$message}}</strong>
                 @endif

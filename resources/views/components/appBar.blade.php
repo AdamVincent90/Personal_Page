@@ -12,7 +12,7 @@
                     <a class="nav-link" href="/about"><i class="fas fa-coffee">  About Me!</i></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/repositories"><i class="fas fa-home">  GitHub Repositories</i></a>
+                    <a class="nav-link" href="/repositories"><i class="fab fa-github" style="font-size: inherit">  GitHub Repositories</i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/grades"><i class="fas fa-book">  University Modules</i></a>
