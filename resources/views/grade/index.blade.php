@@ -6,7 +6,7 @@
     <div class="container pt-5 mb-0">
         <h1>University Modules and grades</h1>
         <p>Below are a list of my University modules that demonstrate some of the skills I developed during University.</p>
-        <table class="table table-hover table-dark mt-5 text-center mb-0">
+        <table class="table table-hover table-dark mt-5 mb-0">
             <thead>
             <tr>
                 <th scope="col">Module</th>
@@ -23,7 +23,7 @@
                 <th>{{$grade['module']}}</th>
                 <td>{{$grade['grade']}}</td>
                 <td>{{$grade['year']}}</td>
-                <td class="text-left">{{$grade['learning_outcome']}}</td>
+                <td class="text-left" style="font-size: 14px">{{$grade['learning_outcome']}}</td>
             </tr>
             @endforeach
                 @endif

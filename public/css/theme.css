@@ -32,6 +32,10 @@ thead {
     font-size: 32px;
 }
 
+footer {
+    height: 20%;
+}
+
 thead > tr {
     color: #1b1e21;
 }
