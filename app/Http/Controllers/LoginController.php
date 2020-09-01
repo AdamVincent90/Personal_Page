@@ -26,14 +26,14 @@ class LoginController extends Controller
             ];
 
 
-            if(Auth::attempt($user)) {
+            if(Auth::attempt($user) == true) {
 
-//                    return redirect()->intended('/about');
+                    return redirect()->intended('/about');
 
 
             }
             else {
-//                return back()->with('error', 'Incorrect Email or Password.');
+                return back()->with('error', 'Incorrect Email or Password.');
             }
     }
 
