@@ -1,7 +1,7 @@
 @section('appBar')
 
     <nav class="navbar navbar-expand-lg">
-        @if($_SESSION['email'])<h1>FALSE</h1> @endif
+        @if(isset($_SESSION['email']))<h1>FALSE</h1> @endif
         <a class="navbar-brand" href="#">Adam Vincent</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
