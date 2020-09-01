@@ -26,8 +26,8 @@ class LoginController extends Controller
             ];
 
 
-            if(Auth::attempt($user) == true) {
-
+            if(Auth::attempt($user)) {
+                    $_SESSION['email'] = $user->email; //test session on heroku
                     return redirect()->intended('/about');
 
 
