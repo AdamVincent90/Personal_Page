@@ -23,7 +23,7 @@ class LoginController extends Controller
             'password' => $request->get('password')
         ];
 
-        if (Auth::attempt($user) === true) {
+        if (Auth::attempt($user)) {
 
             return redirect()->intended('/about');
 
