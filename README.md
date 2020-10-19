@@ -1,3 +1,26 @@
+## Website Example Snapshots
+
+Website About(Landing) Page Desktop: 
+
+![Landing Desktop](https://user-images.githubusercontent.com/37915853/96470397-26909980-1226-11eb-86b6-775d77f4eb6f.png)
+
+Website Repository Page Desktop:
+
+![Repository Desktop](https://user-images.githubusercontent.com/37915853/96470525-4cb63980-1226-11eb-8b45-4d0267bbcd31.png)
+
+Website Module Page:
+
+![Modules](https://user-images.githubusercontent.com/37915853/96470594-5dff4600-1226-11eb-852a-abdfbe7aae79.png)
+
+Website About Page(Landing) Mobile:
+
+![About Mobile](https://user-images.githubusercontent.com/37915853/96470729-7f603200-1226-11eb-9a40-9a3b1baba7a4.png)
+
+Website Repository Page Mobile:
+
+![Repository Mobile](https://user-images.githubusercontent.com/37915853/96470802-9141d500-1226-11eb-98de-12e8f71827b2.png)
+
+
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
 <p align="center">

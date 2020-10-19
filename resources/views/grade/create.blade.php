@@ -5,7 +5,7 @@
 
 @section('content')
     <div class="container">
-        <h1 class="pt-5">Create A Grade</h1>
+        <h1 class="pt-5">Create A User</h1>
         <form class="form-group" method="post" action="/grades">
             <input class="form-control-plaintext bg-light mb-2" type="text" name="module" placeholder="Module Name">
             <input class="form-control-plaintext bg-light mb-2" type="text" name="grade" placeholder="Grade" maxlength="2">
