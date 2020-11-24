@@ -25,5 +25,6 @@
         <div class="col col-12 text-center">
             <a class="btn" href="https://www.dropbox.com/s/ognh4szjb99q6zz/AdamVincentCV.docx?dl=0">View my resume!</a>
         </div>
+        <a href="https://app.testdome.com/cert/6161b5ddf59140dba30b5575d8cac127" class="testdome-certificate-stamp gold"><span class="testdome-certificate-name">Adam Vincent</span><span class="testdome-certificate-test-name">PHP </span><span class="testdome-certificate-card-logo">TestDome<br />Certificate</span></a><script>var stylesheet = "https://app.testdome.com/content/source/stylesheets/embed.css", link = document.createElement("link"); link.href = stylesheet, link.type = "text/css", link.rel = "stylesheet", link.media = "screen,print", document.getElementsByTagName("head")[0].appendChild(link);</script>
     </div>
 @endsection
